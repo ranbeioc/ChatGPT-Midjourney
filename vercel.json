@@ -4,20 +4,12 @@
     },
     "headers": [
         {
-            "source": "/(.*)",
+            "source": "/api/(.*)",
             "headers": [
-                {
-                    "key": "X-Real-IP",
-                    "value": "$remote_addr"
-                },
-                {
-                    "key": "X-Forwarded-For",
-                    "value": "$proxy_add_x_forwarded_for"
-                },
-                {
-                    "key": "Host",
-                    "value": "$http_host"
-                }
+                { "key": "Access-Control-Allow-Credentials", "value": "true" },
+                { "key": "Access-Control-Allow-Origin", "value": "*" },
+                { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+                { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
             ]
         }
     ]
