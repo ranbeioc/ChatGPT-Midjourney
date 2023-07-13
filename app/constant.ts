@@ -6,8 +6,8 @@ export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/commits?per_page=1`;
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
-export const HELP_URL = '../docs/AI_GPT_Midjourney_v1.pdf';
-export const DICT_URL = '../docs/Midjourney_Dictionary_v1.pdf';
+export const HELP_URL = 'https://pan.baidu.com/s/181us2GA4H60duUAm5VELEQ?pwd=xcat';
+export const DICT_URL = 'https://pan.baidu.com/s/1CAnosdHBN-QrRRNlMyWRdw?pwd=xcat';
 
 export enum Path {
   Home = "/",
