@@ -10,6 +10,8 @@ import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
+import HelpIcon from "../icons/help.svg";
+import DictionaryIcon from "../icons/dictionary.svg"
 
 import Locale from "../locales";
 
@@ -21,6 +23,8 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
+  HELP_URL,
+  DICT_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -173,11 +177,18 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
+          
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
+            <a href={HELP_URL} target="_blank">
+              <IconButton icon={<HelpIcon />} shadow />
             </a>
           </div>
+          <div className={styles["sidebar-action"]}>
+            <a href={DICT_URL} target="_blank">
+              <IconButton icon={<DictionaryIcon />} shadow />
+            </a>
+          </div>
+
         </div>
         <div>
           <IconButton
